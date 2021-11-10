@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="5" short-name="tocpc-2021" url="https://polygon.codeforces.com/p4liw0i/T0p_/tocpc-2021">
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>268435456</memory-limit>
+                        
+            <test-count>65</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test cmd="generator 6 12 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 7 16 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 6 11 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 13 15 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 6 5 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 54 87 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 40 93 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 95 101 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 21 59 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 121 65 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 179 260 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 249 226 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 292 201 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 266 222 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 300 300 0" group="1" method="generated"/>
+                                
+                <test cmd="generator 8 15 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 15 14 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 4 6 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 7 8 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 2 5 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 29 118 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 90 122 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 118 136 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 97 119 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 59 145 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 211 293 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 240 244 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 170 230 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 254 262 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 300 300 1" group="2" method="generated"/>
+                                
+                <test cmd="generator 17 6 5" group="3" method="generated"/>
+                                
+                <test cmd="generator 18 9 7" group="3" method="generated"/>
+                                
+                <test cmd="generator 11 13 9" group="3" method="generated"/>
+                                
+                <test cmd="generator 21 3 0" group="3" method="generated"/>
+                                
+                <test cmd="generator 16 14 12" group="3" method="generated"/>
+                                
+                <test cmd="generator 13 3 2" group="3" method="generated"/>
+                                
+                <test cmd="generator 2 20 4" group="3" method="generated"/>
+                                
+                <test cmd="generator 13 12 6" group="3" method="generated"/>
+                                
+                <test cmd="generator 11 14 0" group="3" method="generated"/>
+                                
+                <test cmd="generator 20 18 7" group="3" method="generated"/>
+                                
+                <test cmd="generator 5 9 3" group="3" method="generated"/>
+                                
+                <test cmd="generator 3 21 10" group="3" method="generated"/>
+                                
+                <test cmd="generator 20 19 6" group="3" method="generated"/>
+                                
+                <test cmd="generator 17 12 1" group="3" method="generated"/>
+                                
+                <test cmd="generator 8 9 6" group="3" method="generated"/>
+                                
+                <test cmd="generator 46 32 25" group="4" method="generated"/>
+                                
+                <test cmd="generator 25 31 21" group="4" method="generated"/>
+                                
+                <test cmd="generator 34 62 32" group="4" method="generated"/>
+                                
+                <test cmd="generator 21 69 37" group="4" method="generated"/>
+                                
+                <test cmd="generator 28 38 37" group="4" method="generated"/>
+                                
+                <test cmd="generator 244 155 76" group="4" method="generated"/>
+                                
+                <test cmd="generator 236 202 55" group="4" method="generated"/>
+                                
+                <test cmd="generator 172 214 51" group="4" method="generated"/>
+                                
+                <test cmd="generator 146 168 72" group="4" method="generated"/>
+                                
+                <test cmd="generator 140 231 58" group="4" method="generated"/>
+                                
+                <test cmd="generator 260 268 140" group="4" method="generated"/>
+                                
+                <test cmd="generator 234 227 129" group="4" method="generated"/>
+                                
+                <test cmd="generator 203 234 106" group="4" method="generated"/>
+                                
+                <test cmd="generator 289 215 113" group="4" method="generated"/>
+                                
+                <test cmd="generator 253 221 81" group="4" method="generated"/>
+                                
+                <test cmd="generator 300 300 26" group="4" method="generated"/>
+                                
+                <test cmd="generator 300 300 222" group="4" method="generated"/>
+                                
+                <test cmd="generator 300 300 8" group="4" method="generated"/>
+                                
+                <test cmd="generator 300 300 14" group="4" method="generated"/>
+                                
+                <test cmd="generator 300 300 206" group="4" method="generated"/>
+                            
+            </tests>
+                        
+            <groups>
+                                
+                <group feedback-policy="complete" name="1" points-policy="complete-group"/>
+                                
+                <group feedback-policy="complete" name="2" points-policy="complete-group"/>
+                                
+                <group feedback-policy="complete" name="3" points-policy="complete-group"/>
+                                
+                <group feedback-policy="complete" name="4" points-policy="complete-group">
+                                        
+                    <dependencies>
+                                                
+                        <dependency group="1"/>
+                                                
+                        <dependency group="2"/>
+                                                
+                        <dependency group="3"/>
+                                            
+                    </dependencies>
+                                    
+                </group>
+                            
+            </groups>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                    
+        </resources>
+                
+        <executables>
+                        
+            <executable>
+                                
+                <source path="files/generator.cpp" type="cpp.g++14"/>
+                            
+            </executable>
+                    
+        </executables>
+            
+    </files>
+        
+    <assets>
+                
+        <checker name="std::wcmp.cpp" type="testlib">
+                        
+            <source path="files/check.cpp" type="cpp.g++17"/>
+                        
+            <copy path="check.cpp"/>
+                        
+            <testset>
+                                
+                <test-count>0</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests/>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <solutions>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/solution_bottom_up.cpp" type="cpp.g++14"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="accepted" testset="tests"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="accepted"/>
+                                        
+                    <extra-tag group="4" tag="accepted"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="accepted">
+                                
+                <source path="solutions/solution_dijkstra.cpp" type="cpp.g++14"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="accepted" testset="tests"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="accepted"/>
+                                        
+                    <extra-tag group="4" tag="accepted"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="accepted">
+                                
+                <source path="solutions/solution_top_down.cpp" type="cpp.g++14"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="accepted" testset="tests"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="accepted"/>
+                                        
+                    <extra-tag group="4" tag="accepted"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+    
+</problem>
