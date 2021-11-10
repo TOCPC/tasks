@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="3" short-name="paranthesis-dfs" url="https://polygon.codeforces.com/p4S03S9/Autoratch/paranthesis-dfs">
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>268435456</memory-limit>
+                        
+            <test-count>20</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test cmd="gen 10 1 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 50 1 2" group="1" method="generated"/>
+                                
+                <test cmd="gen 200 1 3" group="1" method="generated"/>
+                                
+                <test cmd="gen 200 1 4" group="1" method="generated"/>
+                                
+                <test cmd="gen 200 1 5" group="1" method="generated"/>
+                                
+                <test cmd="gen 200 1 6" group="1" method="generated"/>
+                                
+                <test cmd="gen 1000 1 1" group="2" method="generated"/>
+                                
+                <test cmd="gen 1000 1 2" group="2" method="generated"/>
+                                
+                <test cmd="gen 1000 1 3" group="2" method="generated"/>
+                                
+                <test cmd="gen 1000 1 4" group="2" method="generated"/>
+                                
+                <test cmd="gen 1000 1 5" group="2" method="generated"/>
+                                
+                <test cmd="gen 1000 1 6" group="2" method="generated"/>
+                                
+                <test cmd="gen 100000 1 1" group="3" method="generated"/>
+                                
+                <test cmd="gen 100000 1 2" group="3" method="generated"/>
+                                
+                <test cmd="gen 100000 1 3" group="3" method="generated"/>
+                                
+                <test cmd="gen 100000 1 4" group="3" method="generated"/>
+                                
+                <test cmd="gen 100000 1 5" group="3" method="generated"/>
+                                
+                <test cmd="gen 100000 1 6" group="3" method="generated"/>
+                                
+                <test cmd="gen 100000 1 7" group="3" method="generated"/>
+                                
+                <test cmd="gen 100000 1 8" group="3" method="generated"/>
+                            
+            </tests>
+                        
+            <groups>
+                                
+                <group feedback-policy="points" name="1" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="2" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="3" points-policy="each-test"/>
+                            
+            </groups>
+                    
+        </testset>
+                
+        <testset name="sample">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>268435456</memory-limit>
+                        
+            <test-count>7</test-count>
+                        
+            <input-path-pattern>sample/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>sample/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test cmd="gen 5 1" method="generated"/>
+                                
+                <test cmd="gen 5 2" method="generated"/>
+                                
+                <test cmd="gen 5 3" method="generated"/>
+                                
+                <test cmd="gen 8 1" method="generated"/>
+                                
+                <test cmd="gen 8 2" method="generated"/>
+                                
+                <test cmd="gen 8 3" method="generated"/>
+                                
+                <test cmd="gen 10" method="generated"/>
+                            
+            </tests>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/genlib.h" type="h.g++"/>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                    
+        </resources>
+                
+        <executables>
+                        
+            <executable>
+                                
+                <source path="files/gen.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/valid.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                    
+        </executables>
+            
+    </files>
+        
+    <assets>
+                
+        <checker name="std::wcmp.cpp" type="testlib">
+                        
+            <source path="files/check.cpp" type="cpp.g++17"/>
+                        
+            <copy path="check.cpp"/>
+                        
+            <testset>
+                                
+                <test-count>0</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests/>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <validators>
+                        
+            <validator>
+                                
+                <source path="files/valid.cpp" type="cpp.g++17"/>
+                                
+                <testset>
+                                        
+                    <test-count>0</test-count>
+                                        
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                                        
+                    <tests/>
+                                    
+                </testset>
+                            
+            </validator>
+                    
+        </validators>
+                
+        <solutions>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/sol.cpp" type="cpp.g++11"/>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/solbrute.cpp" type="cpp.g++11"/>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/solbrutestring.cpp" type="cpp.g++11"/>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/solnobw.cpp" type="cpp.g++11"/>
+                            
+            </solution>
+                        
+            <solution tag="time-limit-exceeded">
+                                
+                <source path="solutions/solnsq.cpp" type="cpp.g++11"/>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+    
+</problem>
