@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="4" short-name="arranging" url="https://polygon.codeforces.com/p5VuV72/inwbear/arranging">
+        
+    <names>
+                
+        <name language="english" value="Arranging"/>
+            
+    </names>
+        
+    <statements>
+                
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+                
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+            
+    </statements>
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>2000</time-limit>
+                        
+            <memory-limit>268435456</memory-limit>
+                        
+            <test-count>50</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test cmd="gen 6 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 5 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 8 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 10 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 15 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 16 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 17 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 18 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 19 1" group="1" method="generated"/>
+                                
+                <test cmd="gen 20 1" group="1" method="generated"/>
+                                
+                <test cmd="gen1 100 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 10000 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 100000 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 200000 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 222223 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 444221 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 556611 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 882111 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 909188 0" group="2" method="generated"/>
+                                
+                <test cmd="gen1 1000000 0" group="2" method="generated"/>
+                                
+                <test cmd="gen 88 0" group="3" method="generated"/>
+                                
+                <test cmd="gen 225 0" group="3" method="generated"/>
+                                
+                <test cmd="gen 10000 0" group="3" method="generated"/>
+                                
+                <test cmd="gen 30121 0" group="3" method="generated"/>
+                                
+                <test cmd="gen 200000 0" group="3" method="generated"/>
+                                
+                <test cmd="gen2 744123 0" group="3" method="generated"/>
+                                
+                <test cmd="gen 888881 0" group="3" method="generated"/>
+                                
+                <test cmd="gen3 994442 0 500" group="3" method="generated"/>
+                                
+                <test cmd="gen 999999 0" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 0" group="3" method="generated"/>
+                                
+                <test cmd="gen 88 1" group="4" method="generated"/>
+                                
+                <test cmd="gen 225 1" group="4" method="generated"/>
+                                
+                <test cmd="gen 10000 1" group="4" method="generated"/>
+                                
+                <test cmd="gen 30121 1" group="4" method="generated"/>
+                                
+                <test cmd="gen 200000 1" group="4" method="generated"/>
+                                
+                <test cmd="gen2 844123 1" group="4" method="generated"/>
+                                
+                <test cmd="gen 888881 1" group="4" method="generated"/>
+                                
+                <test cmd="gen3 994442 1 944" group="4" method="generated"/>
+                                
+                <test cmd="gen 999999 1" group="4" method="generated"/>
+                                
+                <test cmd="gen 1000000 1" group="4" method="generated"/>
+                                
+                <test cmd="gen 88 2" group="5" method="generated"/>
+                                
+                <test cmd="gen 225 2" group="5" method="generated"/>
+                                
+                <test cmd="gen 10000 2" group="5" method="generated"/>
+                                
+                <test cmd="gen 30121 2" group="5" method="generated"/>
+                                
+                <test cmd="gen 200000 2" group="5" method="generated"/>
+                                
+                <test cmd="gen2 744123 2" group="5" method="generated"/>
+                                
+                <test cmd="gen 888881 2" group="5" method="generated"/>
+                                
+                <test cmd="gen3 994442 2 932" group="5" method="generated"/>
+                                
+                <test cmd="gen 999999 2" group="5" method="generated"/>
+                                
+                <test cmd="gen 1000000 2" group="5" method="generated"/>
+                            
+            </tests>
+                        
+            <groups>
+                                
+                <group feedback-policy="points" name="1" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="2" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="3" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="4" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="5" points-policy="each-test"/>
+                            
+            </groups>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                    
+        </resources>
+                
+        <executables>
+                        
+            <executable>
+                                
+                <source path="files/gen.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen1.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen2.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen3.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                    
+        </executables>
+            
+    </files>
+        
+    <assets>
+                
+        <checker name="std::wcmp.cpp" type="testlib">
+                        
+            <source path="files/check.cpp" type="cpp.g++17"/>
+                        
+            <copy path="check.cpp"/>
+                        
+            <testset>
+                                
+                <test-count>0</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests/>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <solutions>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/sol.cpp" type="cpp.g++17"/>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+    
+</problem>
