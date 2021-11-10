@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="2" short-name="tocpc-lis" url="https://polygon.codeforces.com/p0ViZFi/my99n/tocpc-lis">
+        
+    <names>
+                
+        <name language="english" value="moles"/>
+            
+    </names>
+        
+    <statements>
+                
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+                
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+                
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+            
+    </statements>
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>268435456</memory-limit>
+                        
+            <test-count>30</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test cmd="gen_sub0 5 0 10" group="0" method="generated" sample="true"/>
+                                
+                <test cmd="gen 5 -5 10 0.8" group="2" method="generated" sample="true"/>
+                                
+                <test cmd="gen_sub0 3000 0 1000" group="0" method="generated"/>
+                                
+                <test cmd="gen_sub0 5000 0 3000" group="0" method="generated"/>
+                                
+                <test cmd="gen_sub0 5000 -12345 10000" group="0" method="generated"/>
+                                
+                <test cmd="gen_sub0 1000000 99299 500" group="0" method="generated"/>
+                                
+                <test cmd="gen_sub0 1000000 123 500" group="0" method="generated"/>
+                                
+                <test cmd="gen_sub0 1000000 -747474 500" group="0" method="generated"/>
+                                
+                <test cmd="gen_sub1 3000 0 1000 0.8" group="1" method="generated"/>
+                                
+                <test cmd="gen_sub1 5000 0 30000 0.9" group="1" method="generated"/>
+                                
+                <test cmd="gen_sub1 5000 12345 30000 0.8" group="1" method="generated"/>
+                                
+                <test cmd="gen_sub1 5000 -9999999 40000 0.8" group="1" method="generated"/>
+                                
+                <test cmd="gen_sub1 5000 -99 30000 0.9" group="1" method="generated"/>
+                                
+                <test cmd="gen 5000 0 1000 0.8" group="2" method="generated"/>
+                                
+                <test cmd="gen 5000 0 10000 0.9" group="2" method="generated"/>
+                                
+                <test cmd="gen 5000 12345 10000 0.8" group="2" method="generated"/>
+                                
+                <test cmd="gen 5000 -9999999 20000 0.8" group="2" method="generated"/>
+                                
+                <test cmd="gen 5000 -99 10000 0.9" group="2" method="generated"/>
+                                
+                <test cmd="gen 5000 74 10000 0.9" group="2" method="generated"/>
+                                
+                <test cmd="gen 5000 74 10000 0.9 99" group="2" method="generated"/>
+                                
+                <test cmd="gen 100000 74 100 0.9 99" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 0 100 0.5" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 0 100 0.8" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 0 100 0.9" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 -99999 200 0.5" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 12345 100 0.8" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 -99 100 0.9" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 1234 30 0.9" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 -7474 100 0.95" group="3" method="generated"/>
+                                
+                <test cmd="gen 1000000 -7474 100 0.95 99999" group="3" method="generated"/>
+                            
+            </tests>
+                        
+            <groups>
+                                
+                <group feedback-policy="points" name="0" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="1" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="2" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="3" points-policy="each-test"/>
+                            
+            </groups>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/genlib.h" type="h.g++"/>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                    
+        </resources>
+                
+        <executables>
+                        
+            <executable>
+                                
+                <source path="files/gen.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_sub0.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_sub1.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/validators.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                    
+        </executables>
+            
+    </files>
+        
+    <assets>
+                
+        <checker name="std::wcmp.cpp" type="testlib">
+                        
+            <source path="files/check.cpp" type="cpp.g++17"/>
+                        
+            <copy path="check.cpp"/>
+                        
+            <testset>
+                                
+                <test-count>0</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests/>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <validators>
+                        
+            <validator>
+                                
+                <source path="files/validators.cpp" type="cpp.g++17"/>
+                                
+                <testset>
+                                        
+                    <test-count>11</test-count>
+                                        
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                                        
+                    <tests>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="valid"/>
+                                            
+                    </tests>
+                                    
+                </testset>
+                            
+            </validator>
+                    
+        </validators>
+                
+        <solutions>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/sol_0.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="rejected" testset="tests"/>
+                                        
+                    <extra-tag group="0" tag="accepted"/>
+                                        
+                    <extra-tag group="1" tag="rejected"/>
+                                        
+                    <extra-tag group="2" tag="rejected"/>
+                                        
+                    <extra-tag group="3" tag="rejected"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/sol_1.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="rejected" testset="tests"/>
+                                        
+                    <extra-tag group="0" tag="rejected"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="rejected"/>
+                                        
+                    <extra-tag group="3" tag="rejected"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/sol_2.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="rejected" testset="tests"/>
+                                        
+                    <extra-tag group="0" tag="rejected"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="rejected"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/sol_2l.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="rejected" testset="tests"/>
+                                        
+                    <extra-tag group="0" tag="rejected"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="rejected"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/sol_3.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="accepted" testset="tests"/>
+                                        
+                    <extra-tag group="0" tag="accepted"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="accepted"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+        
+    <tags>
+                
+        <tag value="binary-search"/>
+                
+        <tag value="dp"/>
+            
+    </tags>
+    
+</problem>

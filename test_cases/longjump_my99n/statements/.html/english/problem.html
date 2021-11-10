@@ -1,0 +1,32 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>jumping</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">jumping</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>64 megabytes</DIV><DIV class="input-file"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>given a n by m grid and w walls. The edge of the grid (row 0, n+1 and col 0, m+1) are also walls. If (a+-1, b) is wall, then it's possible to move from (a, b) to (x, b) such that there's no wall in between (a, b) and (x, b). Similar moving rule applies for column, that is it's possible to move from (a, b) to (a, x) such that there's no wall in between (a, b) and (a, x) if there's a wall on (a, b+-1). Note that wall (a+-1, b) also counts if it's in the jumping path.</P><P>Find minimum moves from (sx, sy) to (ex, ey).</P><P>the grid coordinate for sx, sy, ex, ey, and walls are from 1-n and 1-m.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>n, m, w sx, sy ex, ey [w lines follow] x, y</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>A #a minimum number of jump required</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Examples</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+5 5 0
+4 1
+4 3
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+1
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+5 5 3
+2 2
+1 4
+1 2
+4 1
+5 4
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+3
+</PRE></DIV></DIV></DIV></DIV><P></P><P>  
+
+</P></BODY></HTML>

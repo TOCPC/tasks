@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="9" short-name="tocpc-bfs2" url="https://polygon.codeforces.com/p5nS0gL/my99n/tocpc-bfs2">
+        
+    <names>
+                
+        <name language="english" value="jumping"/>
+            
+    </names>
+        
+    <statements>
+                
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+                
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+            
+    </statements>
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>67108864</memory-limit>
+                        
+            <test-count>45</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test cmd="gen_no_wall 5 5 2 1" group="1" method="generated" sample="true"/>
+                                
+                <test group="2" method="manual" sample="true"/>
+                                
+                <test cmd="gen_no_wall 999 999 2 1" group="1" method="generated"/>
+                                
+                <test cmd="gen_no_wall 999 999 3 0" group="1" method="generated"/>
+                                
+                <test cmd="gen_no_wall 999 999 1 0" group="1" method="generated"/>
+                                
+                <test cmd="gen_no_wall 999 999 2 0" group="1" method="generated"/>
+                                
+                <test cmd="gen_no_wall 174240 923421 2 1" group="1" method="generated"/>
+                                
+                <test cmd="gen_no_wall 974240 923421 3 1" group="1" method="generated"/>
+                                
+                <test cmd="gen_no_wall 974140 923441 2 0" group="1" method="generated"/>
+                                
+                <test cmd="gen_no_wall 979240 923321 1 1" group="1" method="generated"/>
+                                
+                <test cmd="gen_small 100 100 1000 1 100 0.9" group="2" method="generated"/>
+                                
+                <test cmd="gen_small 1000 1000 10000 1000 1 0.95" group="2" method="generated"/>
+                                
+                <test cmd="gen_small 1000 1000 10000 1000 1 0.7" group="2" method="generated"/>
+                                
+                <test cmd="gen_small 1000 1000 10000 1000 700 0.7" group="2" method="generated"/>
+                                
+                <test cmd="newgen_random 1000 1000 7000 15 65" group="2" method="generated"/>
+                                
+                <test cmd="newgen_ladder 1000 1000 100 10 15 65" group="2" method="generated"/>
+                                
+                <test cmd="newgen_ladder 1000 1000 900 3 15 65" group="2" method="generated"/>
+                                
+                <test cmd="newgen_random 1000 1000 10000 15 65" group="2" method="generated"/>
+                                
+                <test cmd="newgen_random 90201 81240 9500 9021 126" group="3" method="generated"/>
+                                
+                <test cmd="newgen_random 20000 12340 6300 123 12280" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 90100 99999 8000 10 15 65" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 99999 99990 5000 10 5 65" group="3" method="generated"/>
+                                
+                <test cmd="newgen_random 99999 81340 9500 90219 12421" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 80000 90400 7500 10 15 65" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 90100 92000 6000 10 5 65" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 99000 90000 8500 9 152 99" group="3" method="generated"/>
+                                
+                <test cmd="newgen_random 90200 61340 6800 909 1280" group="3" method="generated"/>
+                                
+                <test cmd="newgen_random 90200 61340 8910 909 1280" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 90200 91340 4500 7 909 120" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 90200 91340 9500 8 90 1421" group="3" method="generated"/>
+                                
+                <test cmd="newgen_random 90200 91340 9500 90 122" group="3" method="generated"/>
+                                
+                <test cmd="newgen_random 90200 91340 10000 9081 12682" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 90200 91340 10000 7 11 21" group="3" method="generated"/>
+                                
+                <test cmd="newgen_ladder 800000 700000 90000 9 111 65" group="4" method="generated"/>
+                                
+                <test cmd="newgen_ladder 600000 800000 85200 9 132 65" group="4" method="generated"/>
+                                
+                <test cmd="newgen_random 900200 891300 50000 90421 12682" group="4" method="generated"/>
+                                
+                <test cmd="newgen_ladder 900200 891300 50000 13 11 21" group="4" method="generated"/>
+                                
+                <test cmd="newgen_ladder 900200 891340 45000 14 11 21" group="4" method="generated"/>
+                                
+                <test cmd="newgen_ladder 900200 891340 68000 12 16 99" group="4" method="generated"/>
+                                
+                <test cmd="newgen_random 901200 891340 50000 90421 1262" group="4" method="generated"/>
+                                
+                <test cmd="newgen_random 901200 891340 50000 95221 1262" group="4" method="generated"/>
+                                
+                <test cmd="newgen_ladder 800200 891340 99900 8 11 21" group="4" method="generated"/>
+                                
+                <test cmd="newgen_ladder 900200 891340 90000 8 16 99" group="4" method="generated"/>
+                                
+                <test cmd="newgen_random 901200 891340 99000 90421 1262" group="4" method="generated"/>
+                                
+                <test cmd="newgen_random 901200 891340 98765 95221 1262" group="4" method="generated"/>
+                            
+            </tests>
+                        
+            <groups>
+                                
+                <group feedback-policy="points" name="1" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="2" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="3" points-policy="each-test"/>
+                                
+                <group feedback-policy="points" name="4" points-policy="each-test"/>
+                            
+            </groups>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/genlib.h" type="h.g++"/>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                    
+        </resources>
+                
+        <executables>
+                        
+            <executable>
+                                
+                <source path="files/gen_no_wall.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/gen_small.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/newgen_ladder.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/newgen_random.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                            
+            </executable>
+                    
+        </executables>
+            
+    </files>
+        
+    <assets>
+                
+        <checker name="std::wcmp.cpp" type="testlib">
+                        
+            <source path="files/check.cpp" type="cpp.g++17"/>
+                        
+            <copy path="check.cpp"/>
+                        
+            <testset>
+                                
+                <test-count>0</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests/>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <validators>
+                        
+            <validator>
+                                
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                                
+                <testset>
+                                        
+                    <test-count>11</test-count>
+                                        
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                                        
+                    <tests>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                            
+                    </tests>
+                                    
+                </testset>
+                            
+            </validator>
+                    
+        </validators>
+                
+        <solutions>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/1bsearch.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="accepted" testset="tests"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="accepted"/>
+                                        
+                    <extra-tag group="4" tag="accepted"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="time-limit-exceeded">
+                                
+                <source path="solutions/1bsearch_and_loop.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="time-limit-exceeded" testset="tests"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="time-limit-exceeded-or-accepted"/>
+                                        
+                    <extra-tag group="4" tag="time-limit-exceeded"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="time-limit-exceeded">
+                                
+                <source path="solutions/2bsearch.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag tag="time-limit-exceeded" testset="tests"/>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                        
+                    <extra-tag group="3" tag="accepted"/>
+                                        
+                    <extra-tag group="4" tag="time-limit-exceeded"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="wrong-answer">
+                                
+                <source path="solutions/sub1-sol.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag group="1" tag="accepted"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                        
+            <solution tag="rejected">
+                                
+                <source path="solutions/sub2-sol.cpp" type="cpp.g++17"/>
+                                
+                <extra-tags>
+                                        
+                    <extra-tag group="2" tag="accepted"/>
+                                    
+                </extra-tags>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+        
+    <tags>
+                
+        <tag value="bfs"/>
+            
+    </tags>
+    
+</problem>
