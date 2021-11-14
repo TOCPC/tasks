@@ -9,11 +9,11 @@ int main(int argc, char* argv[])
 {
     registerValidation(argc, argv);
  
-    int n = inf.readInt(1, 1000000, "n");
+    long long n = inf.readInt(2, 1000000, "n");
     inf.readSpace();
-    int m = inf.readInt(1, 1000000, "m");
+    long long m = inf.readInt(2, 1000000, "m");
     inf.readSpace();
-    int w = inf.readInt(0, 1000000, "w");
+    long long w = inf.readInt(0, min(100000ll, (n+2)*(m+2)-2), "w");
     inf.readEoln();
     
     int sx = inf.readInt(1, n, "sx");
